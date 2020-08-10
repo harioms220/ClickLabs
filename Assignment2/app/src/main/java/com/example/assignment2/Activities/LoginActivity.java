@@ -40,14 +40,13 @@ public class LoginActivity extends AppCompatActivity {
                 EditText password = findViewById(R.id.email);
                 String passwordString = password.getText().toString();
 
-                if(emailString.equals(VALID_EMAIL) && passwordString.equals(passwordString)){
-                    Snackbar.make(v,"Login Successful", Snackbar.LENGTH_SHORT).show();
+                if (emailString.equals(VALID_EMAIL) && passwordString.equals(passwordString)) {
+                    Snackbar.make(v, "Login Successful", Snackbar.LENGTH_SHORT).show();
+                } else {
+                    Snackbar.make(v, "invalid email or password", Snackbar.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getApplicationContext(), OtpActivity.class);
+                    startActivity(intent);
                 }
-                else {
-                    Snackbar.make(v,"invalid email or password", Snackbar.LENGTH_SHORT).show();
-                }
-//                Intent intent = new Intent(getApplicationContext(), OtpActivity.class);
-//                startActivity(intent);
             }
         });
     }
