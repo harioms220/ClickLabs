@@ -15,12 +15,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Name of the student"
-        android:textSize="@dimen/medium_size"
+        android:textSize="@dimen/tv_medium_size"
         android:textColor="@color/green"/>
     <TextView
-        android:id="@+id/textview_item_student_detail_class"
+        android:id="@+id/tv_item_student_detail_grid_class"
         android:layout_width="wrap_content"
-        android:textSize="@dimen/medium_size"
+        android:textSize="@dimen/tv_medium_size"
         android:text="Class of the student"
         android:layout_height="wrap_content"
         android:textColor="@color/green"/>

@@ -16,13 +16,13 @@
         app:hintEnabled="false" >
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edittext_studentadding_student_name"
+            android:id="@+id/et_studentadding_student_name"
             android:layout_width="match_parent"
             android:layout_height="@dimen/edit_text_height"
             android:maxLines="1"
             android:inputType="text"
             android:hint="@string/all_edittext_name"
-            android:textSize="@dimen/medium_size"
+            android:textSize="@dimen/tv_medium_size"
             android:background="@drawable/all_button_shape"
             android:textColor="@color/green"/>
     </com.google.android.material.textfield.TextInputLayout>
@@ -37,12 +37,12 @@
 
         <com.google.android.material.textfield.TextInputEditText
 
-            android:id="@+id/edittext_studentadding_student_class"
+            android:id="@+id/et_studentadding_student_class"
             android:layout_width="match_parent"
             android:layout_height="@dimen/edit_text_height"
             android:maxLines="1"
             android:inputType="number"
-            android:textSize="@dimen/medium_size"
+            android:textSize="@dimen/tv_medium_size"
             android:hint="@string/all_edittext_class"
             android:background="@drawable/all_button_shape"
             android:textColor="@color/green"/>
@@ -57,8 +57,8 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:id="@+id/edittext_studentadding_student_rollno"
-            android:textSize="@dimen/medium_size"
+            android:id="@+id/et_studentadding_student_rollno"
+            android:textSize="@dimen/tv_medium_size"
             android:layout_height="@dimen/edit_text_height"
             android:maxLines="1"
             android:inputType="text"
@@ -69,7 +69,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/student_submit"
+        android:id="@+id/btn_studentadding_submit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/all_btn_submit"

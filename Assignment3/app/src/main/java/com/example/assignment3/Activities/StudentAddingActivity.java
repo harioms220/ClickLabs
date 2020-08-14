@@ -17,14 +17,14 @@ public class StudentAddingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_adding);
-        Button button = findViewById(R.id.student_submit);
+        Button buttonSubmit = findViewById(R.id.btn_studentadding_submit);
         getSupportActionBar().setTitle("ADD STUDENT");
-        button.setOnClickListener(new View.OnClickListener() {
+        buttonSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EditText name = findViewById(R.id.edittext_studentadding_student_name);
-                EditText studentclass = findViewById(R.id.edittext_studentadding_student_class);
-                EditText studentrollno= findViewById(R.id.edittext_studentadding_student_rollno);
+                EditText name = findViewById(R.id.et_studentadding_student_name);
+                EditText studentclass = findViewById(R.id.et_studentadding_student_class);
+                EditText studentrollno= findViewById(R.id.et_studentadding_student_rollno);
                 StudentDetails studentDetails = new StudentDetails(name.getText().toString(),
                                                                     new Integer(studentclass.getText().toString()),
                                                                     studentrollno.getText().toString());

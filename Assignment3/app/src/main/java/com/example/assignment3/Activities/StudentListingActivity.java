@@ -61,7 +61,7 @@ public class StudentListingActivity extends AppCompatActivity {
             ft.replace(R.id.student_listing_place_holder, recyclerViewFragment);
         }
         ft.commit();
-        Button button = findViewById(R.id.btn_student_listing_add);
+        Button buttonAdd = findViewById(R.id.btn_student_listing_add);
         handleAddButtonClick();
     }
 

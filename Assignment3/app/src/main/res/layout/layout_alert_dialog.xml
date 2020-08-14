@@ -8,7 +8,7 @@
     android:layout_width="wrap_content"
     >
     <Button
-        android:id="@+id/alert_button_view"
+        android:id="@+id/btn_alert_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/green"
@@ -17,23 +17,23 @@
         android:background="@drawable/all_button_shape"
         />
     <Button
-        android:id="@+id/alert_button_edit"
+        android:id="@+id/btn_alert_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/all_button_shape"
         android:textColor="@color/green"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/alert_button_view"
+        android:layout_below="@id/btn_alert_view"
         android:text="@string/all_btn_edit"
         />
     <Button
-        android:id="@+id/alert_button_delete"
+        android:id="@+id/btn_alert_delete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/all_button_shape"
         android:layout_centerHorizontal="true"
         android:textColor="@color/green"
-        android:layout_below="@id/alert_button_edit"
+        android:layout_below="@id/btn_alert_edit"
         android:text="@string/all_btn_delete"
         />
 </RelativeLayout>

@@ -52,8 +52,8 @@ public class StudentDetailsAdapter extends RecyclerView.Adapter<StudentDetailsAd
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
-        holder.student_name.setText(studentsDetails.get(position).getStudentName());
-        holder.student_class.setText(new Integer(studentsDetails.get(position).getStudentClass()).toString());
+        holder.tvStudentName.setText(studentsDetails.get(position).getStudentName());
+        holder.tvStudentClass.setText(new Integer(studentsDetails.get(position).getStudentClass()).toString());
 
         holder.parentView.setOnClickListener(new View.OnClickListener() {
 
@@ -66,24 +66,24 @@ public class StudentDetailsAdapter extends RecyclerView.Adapter<StudentDetailsAd
                         .setView(alertDialogView).create();
                 alertDialog.show();
 
-                Button button_view = alertDialogView.findViewById(R.id.alert_button_view);
-                button_view.setOnClickListener(new View.OnClickListener() {
+                Button buttonView = alertDialogView.findViewById(R.id.btn_alert_view);
+                buttonView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         handleClickEvents(v, 0);
                     }
                 });
 
-                Button button_edit = alertDialogView.findViewById(R.id.alert_button_edit);
-                button_edit.setOnClickListener(new View.OnClickListener() {
+                Button buttonEdit = alertDialogView.findViewById(R.id.btn_alert_edit);
+                buttonEdit.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         handleClickEvents(v, 1);
                     }
                 });
 
-                Button button_delete = alertDialogView.findViewById(R.id.alert_button_delete);
-                button_delete.setOnClickListener(new View.OnClickListener() {
+                Button buttonDelete = alertDialogView.findViewById(R.id.btn_alert_delete);
+                buttonDelete.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         studentsDetails.remove(position);
@@ -110,15 +110,15 @@ public class StudentDetailsAdapter extends RecyclerView.Adapter<StudentDetailsAd
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView student_name;
-        TextView student_class;
+        TextView tvStudentName;
+        TextView tvStudentClass;
         View parentView;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             parentView = itemView;
-            student_name = itemView.findViewById(R.id.textviewtem_name);
-            student_class = itemView.findViewById(R.id.textview_item_student_detail_class);
+            tvStudentName = itemView.findViewById(R.id.tv_item_student_detail_grid_name);
+            tvStudentClass = itemView.findViewById(R.id.tv_item_student_detail_grid_class);
         }
     }
 }

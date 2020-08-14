@@ -4,7 +4,7 @@
 <!--    <string name="action_view">Change View</string>-->
     <string name="ab_title_home">HOME</string>
     <string name="btn_add_student">ADD STUDENT</string>
-    <string name="no_student_added">No student has been added yet.</string>
+    <string name="tv_textviewFragment_text">No student has been added yet.</string>
     <string name="all_btn_view">view</string>
     <string name="all_btn_edit">edit</string>
     <string name="all_btn_delete">delete</string>
