@@ -16,14 +16,14 @@
         app:hintEnabled="false" >
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/student_name"
+            android:id="@+id/edittext_studentadding_student_name"
             android:layout_width="match_parent"
             android:layout_height="@dimen/edit_text_height"
             android:maxLines="1"
             android:inputType="text"
-            android:hint="@string/enter_student_name"
+            android:hint="@string/all_edittext_name"
             android:textSize="@dimen/medium_size"
-            android:background="@drawable/button_drawable"
+            android:background="@drawable/all_button_shape"
             android:textColor="@color/green"/>
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -37,14 +37,14 @@
 
         <com.google.android.material.textfield.TextInputEditText
 
-            android:id="@+id/student_class"
+            android:id="@+id/edittext_studentadding_student_class"
             android:layout_width="match_parent"
             android:layout_height="@dimen/edit_text_height"
             android:maxLines="1"
             android:inputType="number"
             android:textSize="@dimen/medium_size"
-            android:hint="@string/enter_class"
-            android:background="@drawable/button_drawable"
+            android:hint="@string/all_edittext_class"
+            android:background="@drawable/all_button_shape"
             android:textColor="@color/green"/>
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -57,13 +57,13 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:id="@+id/student_rollno"
+            android:id="@+id/edittext_studentadding_student_rollno"
             android:textSize="@dimen/medium_size"
             android:layout_height="@dimen/edit_text_height"
             android:maxLines="1"
             android:inputType="text"
-            android:hint="@string/enter_rollno"
-            android:background="@drawable/button_drawable"
+            android:hint="@string/all_edittext_rollno"
+            android:background="@drawable/all_button_shape"
             android:textColor="@color/green"/>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -72,7 +72,7 @@
         android:id="@+id/student_submit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_submit"
+        android:text="@string/all_btn_submit"
         android:layout_marginTop="@dimen/large"
         android:layout_marginLeft="@dimen/large"
         android:layout_marginRight="@dimen/large"

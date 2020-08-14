@@ -12,28 +12,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/green"
-        android:text="@string/button_view"
+        android:text="@string/all_btn_view"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/button_drawable"
+        android:background="@drawable/all_button_shape"
         />
     <Button
         android:id="@+id/alert_button_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button_drawable"
+        android:background="@drawable/all_button_shape"
         android:textColor="@color/green"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/alert_button_view"
-        android:text="@string/button_edit"
+        android:text="@string/all_btn_edit"
         />
     <Button
         android:id="@+id/alert_button_delete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button_drawable"
+        android:background="@drawable/all_button_shape"
         android:layout_centerHorizontal="true"
         android:textColor="@color/green"
         android:layout_below="@id/alert_button_edit"
-        android:text="@string/button_delete"
+        android:text="@string/all_btn_delete"
         />
 </RelativeLayout>

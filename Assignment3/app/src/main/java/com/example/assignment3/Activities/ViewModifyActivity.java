@@ -2,7 +2,6 @@ package com.example.assignment3.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -36,9 +35,9 @@ public class ViewModifyActivity extends AppCompatActivity {
 
     private void openViewMode(StudentDetails detail) {
         getSupportActionBar().setTitle("VIEW DETAILS");
-        EditText student_name = findViewById(R.id.student_name);
-        EditText student_class = findViewById(R.id.student_class);
-        EditText student_rollno = findViewById(R.id.student_rollno);
+        EditText student_name = findViewById(R.id.edittext_studentadding_student_name);
+        EditText student_class = findViewById(R.id.edittext_studentadding_student_class);
+        EditText student_rollno = findViewById(R.id.edittext_studentadding_student_rollno);
         student_name.setText(detail.getStudentName());
         student_name.setFocusable(false);
         student_class.setText(detail.getStudentClass().toString());
@@ -51,9 +50,9 @@ public class ViewModifyActivity extends AppCompatActivity {
 
     private void openModifyMode(StudentDetails detail) {
         getSupportActionBar().setTitle("UPDATE DETAILS");
-        final EditText student_name = findViewById(R.id.student_name);
-        final EditText student_class = findViewById(R.id.student_class);
-        final EditText student_rollno = findViewById(R.id.student_rollno);
+        final EditText student_name = findViewById(R.id.edittext_studentadding_student_name);
+        final EditText student_class = findViewById(R.id.edittext_studentadding_student_class);
+        final EditText student_rollno = findViewById(R.id.edittext_studentadding_student_rollno);
         student_name.setText(detail.getStudentName());
         student_class.setText(detail.getStudentClass().toString());
         student_rollno.setText(detail.getRollNumber());

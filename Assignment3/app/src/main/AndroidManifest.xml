@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Activities.StudentAddingActivity"
-            android:label="@string/button_add_student2"/>
+            android:label="@string/all_btn_add"/>
         <activity
             android:name=".Activities.StudentListingActivity"
-            android:label="@string/home" />
+            android:label="@string/ab_title_home" />
         <activity
             android:name=".Activities.SplashActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
@@ -23,7 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.ViewModifyActivity" android:label="@string/title_update"></activity>
+        <activity android:name=".Activities.ViewModifyActivity" android:label="@string/ab_title_update"></activity>
     </application>
 
 </manifest>

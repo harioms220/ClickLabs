@@ -1,14 +1,12 @@
 package Adapters;
 
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.assignment3.Activities.ViewModifyActivity;
@@ -45,7 +43,7 @@ public class StudentDetailsAdapter extends RecyclerView.Adapter<StudentDetailsAd
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         Log.d("onBindViewHolder: ", "chala");
         if (list) {
-            return new ViewHolder(inflater.inflate(R.layout.item_student_data, parent, false));
+            return new ViewHolder(inflater.inflate(R.layout.item_student_detail, parent, false));
         }
         else {
             return new ViewHolder(inflater.inflate(R.layout.item_student_data_grid, parent, false));
@@ -63,7 +61,7 @@ public class StudentDetailsAdapter extends RecyclerView.Adapter<StudentDetailsAd
 
             @Override
             public void onClick(View v) {
-                View alertDialogView = LayoutInflater.from(v.getContext()).inflate(R.layout.alert_dialog_view, null);
+                View alertDialogView = LayoutInflater.from(v.getContext()).inflate(R.layout.layout_alert_dialog, null);
                 alertDialog = new AlertDialog.Builder(v.getContext())
                         .setView(alertDialogView).create();
                 alertDialog.show();
@@ -119,8 +117,8 @@ public class StudentDetailsAdapter extends RecyclerView.Adapter<StudentDetailsAd
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             parentView = itemView;
-            student_name = itemView.findViewById(R.id.item_name);
-            student_class = itemView.findViewById(R.id.item_class);
+            student_name = itemView.findViewById(R.id.textviewtem_name);
+            student_class = itemView.findViewById(R.id.textview_item_student_detail_class);
         }
     }
 }

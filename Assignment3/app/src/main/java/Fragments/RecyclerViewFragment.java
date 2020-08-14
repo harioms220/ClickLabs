@@ -29,7 +29,7 @@ public class RecyclerViewFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_recyclerview, container, false);
-        RecyclerView recyclerView = view.findViewById(R.id.rv);
+        RecyclerView recyclerView = view.findViewById(R.id.recyclerview);
         if (flag) {
             RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext());
             recyclerView.setLayoutManager(layoutManager);

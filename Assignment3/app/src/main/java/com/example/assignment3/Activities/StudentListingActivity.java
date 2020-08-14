@@ -54,21 +54,21 @@ public class StudentListingActivity extends AppCompatActivity {
         Fragment textViewFragment = new TextViewFragment();
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         if(studentsDetailsList.isEmpty()) {
-            ft.add(R.id.place_holder, textViewFragment);
+            ft.add(R.id.student_listing_place_holder, textViewFragment);
         }
         else{
             Fragment recyclerViewFragment = new RecyclerViewFragment(mAdapter, true);
-            ft.replace(R.id.place_holder, recyclerViewFragment);
+            ft.replace(R.id.student_listing_place_holder, recyclerViewFragment);
         }
         ft.commit();
-        Button button = findViewById(R.id.button_add);
+        Button button = findViewById(R.id.btn_student_listing_add);
         handleAddButtonClick();
     }
 
 
 
     private void handleAddButtonClick(){
-        Button button = findViewById(R.id.button_add);
+        Button button = findViewById(R.id.btn_student_listing_add);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -87,7 +87,7 @@ public class StudentListingActivity extends AppCompatActivity {
             if(studentsDetailsList.size() == 1){
                 FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
                 Fragment recyclerViewFragment = new RecyclerViewFragment(mAdapter, true);
-                fragmentTransaction.replace(R.id.place_holder, recyclerViewFragment);
+                fragmentTransaction.replace(R.id.student_listing_place_holder, recyclerViewFragment);
                 fragmentTransaction.commit();
             }
             mAdapter.notifyDataSetChanged();
@@ -121,7 +121,7 @@ public class StudentListingActivity extends AppCompatActivity {
                         item.setIcon(R.drawable.ic_listview);
                         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
                         Fragment recyclerViewFragment = new RecyclerViewFragment(mAdapter, false);
-                        fragmentTransaction.replace(R.id.place_holder, recyclerViewFragment);
+                        fragmentTransaction.replace(R.id.student_listing_place_holder, recyclerViewFragment);
                         fragmentTransaction.commit();
                         gridview_icon_clicked = false;
                     }
@@ -129,7 +129,7 @@ public class StudentListingActivity extends AppCompatActivity {
                         item.setIcon(R.drawable.ic_gridview);
                         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
                         Fragment recyclerViewFragment = new RecyclerViewFragment(mAdapter, true);
-                        fragmentTransaction.replace(R.id.place_holder, recyclerViewFragment);
+                        fragmentTransaction.replace(R.id.student_listing_place_holder, recyclerViewFragment);
                         fragmentTransaction.commit();
                         gridview_icon_clicked = true;
                     }
